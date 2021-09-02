@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="zztCode" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" serverName="zztCode" uploadOnCheckin="655d32b8-e58f-46f3-896e-bfb27382fb70" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="zztCode">
         <serverdata>
@@ -10,5 +10,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="zztCode" />
   </component>
 </project>
