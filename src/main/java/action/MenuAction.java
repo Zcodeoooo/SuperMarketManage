@@ -117,19 +117,19 @@ public class MenuAction {
             switch (choose) {
                 case 1:
                     login(AdminConstants.class);
-                    productTypeManage();
+                    ProductTypeAction.productTypeManage(scanner,productTypeService);
                     break;
                 case 2:
                     login(AdminConstants.class);
-                    productInfoManage();
+                    ProductInfoAction.productInfoManage(scanner,productInfoService);
                     break;
                 case 3:
                     login(AdminConstants.class);
-                    vipManage();
+                    VipAction.vipManage(scanner,vipManageService);
                     break;
                 case 4:
                     //login(scanner, CashierConstants.class);
-                    orderManage();
+                    OrderAction.orderManage(scanner,orderManageService);
                     break;
                 case 5:
                     login(CashierConstants.class);
@@ -147,160 +147,6 @@ public class MenuAction {
             }
         }
 
-    }
-
-
-    /**
-     * 商品类型管理菜单
-     */
-
-
-    public void productTypeManage() {
-        boolean temp = true;
-        while (temp) {
-            System.out.println("商品类型管理菜单");
-            System.out.println("1.添加商品类型");
-            System.out.println("2.修改商品类型");
-            System.out.println("3.查询商品类型");
-            System.out.println("4.删除商品类型");
-            System.out.println("5.退出");
-            System.out.print("请选择:");
-            int choose = scanner.nextInt();
-            switch (choose) {
-                case 1:
-                    productTypeService.addProductType();
-                    break;
-                case 2:
-                    productTypeService.upProductType();
-                    break;
-                case 3:
-                    productTypeService.findChooseProductType();
-                    break;
-                case 4:
-                    productTypeService.deleteProductType();
-                    break;
-                case 5:
-                    temp = false;
-                    break;
-                default:
-                    break;
-            }
-        }
-    }
-
-    /**
-     * 商品管理菜单
-     */
-
-    public void productInfoManage() {
-        boolean temp = true;
-        while (temp) {
-            System.out.println("商品管理菜单");
-            System.out.println("1.添加商品信息");
-            System.out.println("2.修改商品信息");
-            System.out.println("3.查询商品信息");
-            System.out.println("4.删除商品信息");
-            System.out.println("5.退出");
-            System.out.print("请选择:");
-            int choose = scanner.nextInt();
-            switch (choose) {
-                case 1:
-                    productInfoService.addProductInfo();
-                    break;
-                case 2:
-                    productInfoService.upProductInfo();
-                    break;
-                case 3:
-                    productInfoService.findProductInfo();
-                    break;
-                case 4:
-                    productInfoService.deleteProductInfo();
-                    break;
-                case 5:
-                    temp = false;
-                    break;
-                default:
-                    break;
-            }
-        }
-    }
-
-    /**
-     * 会员管理菜单
-     */
-
-    public void vipManage(){
-        boolean temp = true;
-        while (temp) {
-            System.out.println("会员管理菜单");
-            System.out.println("1.添加会员信息");
-            System.out.println("2.修改会员信息");
-            System.out.println("3.查询会员信息");
-            System.out.println("4.删除会员信息");
-            System.out.println("5.会员充值");
-            System.out.println("6.退出");
-            System.out.print("请选择:");
-            int choose = scanner.nextInt();
-            switch (choose) {
-                case 1:
-                    vipManageService.addVip();
-                    break;
-                case 2:
-                    vipManageService.upVip();
-                    break;
-                case 3:
-                    vipManageService.findVip();
-                    break;
-                case 4:
-                    vipManageService.deleteVip();
-                    break;
-                case 5:
-                    vipManageService.payVip();
-                    break;
-                case 6:
-                    temp = false;
-                    break;
-                default:
-                    break;
-            }
-        }
-    }
-
-
-    /**
-     * 商品类型管理菜单
-     */
-    private void orderManage() {
-        boolean temp = true;
-        while (temp) {
-            System.out.println("购买管理菜单");
-            System.out.println("1.购买商品");
-            System.out.println("2.修改商品数量");
-            System.out.println("3.删除购物车中的商品");
-            System.out.println("4.展示购物车商品列表");
-            System.out.println("5.退出");
-            System.out.print("请选择:");
-            int choose = scanner.nextInt();
-            switch (choose) {
-                case 1:
-                    orderManageService.addProduct();
-                    break;
-                case 2:
-                    orderManageService.upProductNum();
-                    break;
-                case 3:
-                    orderManageService.deleteCartProduct();
-                    break;
-                case 4:
-                    orderManageService.showCartProduct();
-                    break;
-                case 5:
-                    temp = false;
-                    break;
-                default:
-                    break;
-            }
-        }
     }
 
     public static void main(String[] args) {
