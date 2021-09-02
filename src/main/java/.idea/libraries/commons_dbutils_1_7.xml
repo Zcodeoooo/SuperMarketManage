@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="commons-dbutils-1.7">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/zzt/commons-dbutils-1.7.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/zzt/lombok.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/zzt/mysql-connector-java-5.1.40-bin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="655d32b8-e58f-46f3-896e-bfb27382fb70" name="zztCode" url="http://localhost">
+        <fileTransfer mountedRoot="E:\zztCode" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>
